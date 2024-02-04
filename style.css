@@ -1,0 +1,252 @@
+/*GLOBAL RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Source Serif 4", serif;
+}
+/* HEADER */
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px;
+  padding-left: 10%;
+  padding-right: 1px;
+  border-bottom: 0, 5px solid;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+  width: 100%;
+}
+
+.menu,
+a,
+.menu button {
+  font-weight: 300;
+  font-size: 14px;
+  text-decoration: none;
+  color: rgb(90, 109, 106);
+}
+.logo {
+  margin-right: auto;
+}
+.menu li {
+  display: inline-block;
+  padding: 0 8px;
+}
+.menu li a {
+  transition: all 0.3s ease;
+}
+
+.menu a:hover {
+  color: rgb(129, 129, 129);
+}
+/*Pulsante dell'header con interazione */
+.menu button {
+  position: relative;
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 10px;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #050505;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 1px solid #000000;
+  border-radius: 25px;
+  box-shadow: inset 0 0 0 0 #222222;
+}
+
+.menu button:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #c5c4c4;
+}
+
+.immagine-profilo img {
+  width: 15%;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 7px;
+  margin-left: 8px;
+}
+
+/* TAG CONTAINER */
+.tag-container {
+  margin: 120px 0 20px 100px;
+}
+
+.following {
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5px;
+}
+.recommended {
+  text-decoration: underline;
+}
+
+/* POST generale */
+.generale {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Contenitore dei post */
+.main-container {
+  margin-left: 100px;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #ffe7e7;
+}
+.post p {
+  max-width: 508px;
+  font-size: 400;
+  color: #525252;
+}
+.sfondo-react {
+  background-color: #fff4f4;
+  border-radius: 15px;
+  padding: 1px;
+}
+.post {
+  width: 820px;
+}
+.autore {
+  font-size: small;
+}
+.img-autore {
+  border-radius: 20px;
+  margin-left: 5px;
+}
+.titolo {
+  max-width: 508px;
+}
+.foto {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 510px;
+  top: 0;
+  margin-top: -100px;
+}
+.info {
+  font-size: small;
+}
+.main-container i {
+  padding-left: 10px;
+}
+
+/* SIDEBAR DX */
+
+.sidebar {
+  width: 30%;
+  padding: 10px 30px;
+  min-width: 250px;
+  height: 100%;
+  border-left: 1px solid #797979;
+}
+
+/* Sezione Twitter*/
+.loghi-twitter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loghi-twitter img {
+  width: 15%;
+}
+.btn-twitter {
+  margin: 15px 0 15px 105px;
+  padding: 5px 10px;
+  letter-spacing: 1px;
+  background: transparent;
+  cursor: pointer;
+  border: 1px solid #000000;
+  border-radius: 25px;
+}
+.twitter-container a {
+  margin: 0 15px 0 140px;
+  text-decoration: underline;
+}
+.space {
+  border-bottom: 1px solid rgb(82, 82, 82);
+  margin: 10px 0;
+}
+
+/*Sidebar DX Topics */
+.topics-tag {
+  margin: 2px;
+  padding: 2px;
+  background-color: #e9e8e8;
+  border-radius: 15px;
+}
+/*Follow*/
+
+.follow-socket {
+  display: flex;
+  align-items: center;
+}
+.follow-socket img {
+  border-radius: 50px;
+}
+.name {
+  font-weight: bold;
+}
+.work {
+  font-size: small;
+  max-width: 200px;
+}
+.dati {
+  margin: 0 15px;
+}
+.follow-btn {
+  margin: 15px 0 15px 45px;
+  padding: 5px 10px;
+  letter-spacing: 1px;
+  background: transparent;
+  cursor: pointer;
+  border: 1px solid #000000;
+  border-radius: 25px;
+}
+/* Recently saved */
+.saved {
+  margin-top: 25px;
+}
+.rec-profile {
+  font-size: small;
+}
+.img-saved {
+  margin-top: 10px;
+  border-radius: 5px;
+}
+/*Message*/
+.message {
+  margin-top: 15px;
+}
+.img-msg {
+  border-radius: 50px;
+}
+.msg-profile {
+  font-weight: bold;
+  font-size: small;
+}
+.see-all {
+  margin-top: 20px;
+}
+/*FOOTER*/
+footer {
+  margin-top: 100px;
+}
+footer a {
+  font-size: smaller;
+  font-weight: bold;
+  padding: 15px;
+}
